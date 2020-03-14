@@ -1,0 +1,29 @@
+﻿  Renderer.cpp
+  Camera.cpp
+  Mesh.cpp
+  OBJLoader.cpp
+  ResourceManager.cpp
+  Shader.cpp
+  Mat4.cpp
+  Vec3.cpp
+  Vec4.cpp
+  Main.cpp
+  Texture.cpp
+  Génération de code en cours...
+C:\Users\Hukuna\Desktop\Travail\repos\Multithreading\lll\GPM2_JORE_V\MultiThreading_Projet\Renderer\Renderer\src\Core\Math\Matrix\Mat4.cpp(87): warning C4172: retourne l'adresse d'une variable locale ou : TmpVec temporaire
+LINK : warning LNK4098: conflit entre la bibliothèque par défaut 'MSVCRT' et les autres bibliothèques ; utilisez /NODEFAULTLIB:library
+  Renderer.vcxproj -> C:\Users\Hukuna\Desktop\Travail\repos\Multithreading\lll\GPM2_JORE_V\MultiThreading_Projet\Renderer\x64\Debug\Renderer.exe
+          1 fichier(s) copié(s).
+          1 fichier(s) copié(s).
+  C:\Users\Hukuna\Desktop\Travail\repos\Multithreading\lll\GPM2_JORE_V\MultiThreading_Projet\Renderer\Renderer\res\OBJ\BarrocMiniTable.obj
+  C:\Users\Hukuna\Desktop\Travail\repos\Multithreading\lll\GPM2_JORE_V\MultiThreading_Projet\Renderer\Renderer\res\OBJ\BarrocTable.obj
+  C:\Users\Hukuna\Desktop\Travail\repos\Multithreading\lll\GPM2_JORE_V\MultiThreading_Projet\Renderer\Renderer\res\OBJ\Cube.obj
+  C:\Users\Hukuna\Desktop\Travail\repos\Multithreading\lll\GPM2_JORE_V\MultiThreading_Projet\Renderer\Renderer\res\OBJ\Dague.obj
+  C:\Users\Hukuna\Desktop\Travail\repos\Multithreading\lll\GPM2_JORE_V\MultiThreading_Projet\Renderer\Renderer\res\OBJ\Dodge.obj
+  C:\Users\Hukuna\Desktop\Travail\repos\Multithreading\lll\GPM2_JORE_V\MultiThreading_Projet\Renderer\Renderer\res\OBJ\Kindred.mtl
+  C:\Users\Hukuna\Desktop\Travail\repos\Multithreading\lll\GPM2_JORE_V\MultiThreading_Projet\Renderer\Renderer\res\OBJ\Kindred.obj
+  C:\Users\Hukuna\Desktop\Travail\repos\Multithreading\lll\GPM2_JORE_V\MultiThreading_Projet\Renderer\Renderer\res\OBJ\Minion.obj
+  C:\Users\Hukuna\Desktop\Travail\repos\Multithreading\lll\GPM2_JORE_V\MultiThreading_Projet\Renderer\Renderer\res\OBJ\Monkey.obj
+  C:\Users\Hukuna\Desktop\Travail\repos\Multithreading\lll\GPM2_JORE_V\MultiThreading_Projet\Renderer\Renderer\res\Shaders\FragmentShader.frag
+  C:\Users\Hukuna\Desktop\Travail\repos\Multithreading\lll\GPM2_JORE_V\MultiThreading_Projet\Renderer\Renderer\res\Shaders\VerticesShader.vert
+  11 fichier(s) copié(s)

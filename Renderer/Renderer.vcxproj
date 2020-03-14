@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{cef0d4cd-05ec-47cb-a7d0-001082f4454b}</ProjectGuid>
+    <RootNamespace>Renderer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir)res/Shaders/include;$(ProjectDir)include;$(SolutionDir)Dependencies\glfw\include\$(Platform);$(SolutionDir)Dependencies\glew\include;$(ProjectDir)src/Core/Math/Vector;$(ProjectDir)src/Core/Math/Matrix;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Dependencies\glew\lib\$(Platform);$(SolutionDir)Dependencies\glfw\lib\$(Platform);$(LibraryPath)</LibraryPath>
+    <SourcePath>$(ProjectDir)src;$(ProjectDir)res/Shaders/src;$(ProjectDir)src/Core;$(ProjectDir)src/Core/Math/Matrix;$(ProjectDir)src/Core/Math/Vector;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir)res/Shaders/include;$(ProjectDir)include;$(SolutionDir)Dependencies\glfw\include\$(Platform);$(SolutionDir)Dependencies\glew\include;$(ProjectDir)src/Core/Math/Vector;$(ProjectDir)src/Core/Math/Matrix;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Dependencies\glew\lib\$(Platform);$(SolutionDir)Dependencies\glfw\lib\$(Platform);$(LibraryPath)</LibraryPath>
+    <SourcePath>$(ProjectDir)src;$(ProjectDir)res/Shaders/src;$(ProjectDir)src/Core;$(ProjectDir)src/Core/Math/Matrix;$(ProjectDir)src/Core/Math/Vector;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(ProjectDir)res/Shaders/include;$(ProjectDir)include;$(SolutionDir)Dependencies\glfw\include\$(Platform);$(SolutionDir)Dependencies\glew\include;$(ProjectDir)src/Core/Math/Vector;$(ProjectDir)src/Core/Math/Matrix;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Dependencies\glew\lib\$(Platform);$(SolutionDir)Dependencies\glfw\lib\$(Platform);$(LibraryPath)</LibraryPath>
+    <SourcePath>$(ProjectDir)src;$(ProjectDir)res/Shaders/src;$(ProjectDir)src/Core;$(ProjectDir)src/Core/Math/Matrix;$(ProjectDir)src/Core/Math/Vector;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir)res/Shaders/include;$(ProjectDir)include;$(SolutionDir)Dependencies\glfw\include\$(Platform);$(SolutionDir)Dependencies\glew\include;$(ProjectDir)src/Core/Math/Vector;$(ProjectDir)src/Core/Math/Matrix;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Dependencies\glew\lib\$(Platform);$(SolutionDir)Dependencies\glfw\lib\$(Platform);$(LibraryPath)</LibraryPath>
+    <SourcePath>$(ProjectDir)src;$(ProjectDir)res/Shaders/src;$(ProjectDir)src/Core;$(ProjectDir)src/Core/Math/Matrix;$(ProjectDir)src/Core/Math/Vector;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)Dependencies\glew\bin\$(Platform)\glew32.dll" "$(OutDir)"
+copy "$(SolutionDir)Dependencies\glfw\bin\$(Platform)\glfw3.dll" "$(OutDir)"
+xcopy /h/i/c/k/e/r/y "$(SolutionDir)Renderer\res" "$(OutDir)"
+</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)Dependencies\glew\bin\$(Platform)\glew32.dll" "$(OutDir)"
+copy "$(SolutionDir)Dependencies\glfw\bin\$(Platform)\glfw3.dll" "$(OutDir)"
+xcopy /h/i/c/k/e/r/y "$(SolutionDir)Renderer\res" "$(OutDir)"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)Dependencies\glew\bin\$(Platform)\glew32.dll" "$(OutDir)"
+copy "$(SolutionDir)Dependencies\glfw\bin\$(Platform)\glfw3.dll" "$(OutDir)"
+xcopy /h/i/c/k/e/r/y "$(SolutionDir)Renderer\res" "$(OutDir)"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)Dependencies\glew\bin\$(Platform)\glew32.dll" "$(OutDir)"
+copy "$(SolutionDir)Dependencies\glfw\bin\$(Platform)\glfw3.dll" "$(OutDir)"
+xcopy /h/i/c/k/e/r/y "$(SolutionDir)Renderer\res" "$(OutDir)"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\LowRenderer\Renderer.cpp" />
+    <ClCompile Include="src\LowRenderer\Camera.cpp" />
+    <ClCompile Include="src\LowRenderer\Mesh.cpp" />
+    <ClCompile Include="src\Core\OBJLoader.cpp" />
+    <ClCompile Include="src\Resources\ResourceManager.cpp" />
+    <ClCompile Include="src\Resources\Shader.cpp" />
+    <ClCompile Include="src\Core\Math\Matrix\Mat4.cpp" />
+    <ClCompile Include="src\Core\Math\Vector\Vec3.cpp" />
+    <ClCompile Include="src\Core\Math\Vector\Vec4.cpp" />
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Resources\Texture.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="res\FragmentShader.frag" />
+    <Text Include="res\VerticesShader.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\LowRenderer\Camera.h" />
+    <ClInclude Include="include\Core\Math\Matrix\Mat4.h" />
+    <ClInclude Include="include\Core\Math\Vector\Vec3.h" />
+    <ClInclude Include="include\Core\Math\Vector\Vec4.h" />
+    <ClInclude Include="include\Core\OBJLoader.h" />
+    <ClInclude Include="include\LowRenderer\Mesh.h" />
+    <ClInclude Include="include\LowRenderer\Renderer.h" />
+    <ClInclude Include="include\Resources\Model.h" />
+    <ClInclude Include="include\Resources\ResourceManager.h" />
+    <ClInclude Include="include\Resources\Shader.h" />
+    <ClInclude Include="include\Resources\Texture.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
