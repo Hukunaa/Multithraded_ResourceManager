@@ -1,3 +1,6 @@
+This project shows my multithread Resource manager, that loads asynchronously the resources presented on screen by a previously made renderer.
+You can move in the world and see your models spawning in front of you in real time.
+
 Camera Controls:
 
 - WASD to move Forward, Backward, Left and Right
